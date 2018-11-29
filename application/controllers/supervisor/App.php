@@ -108,7 +108,7 @@ class App extends MY_Controller {
             'status' => $status
         );
         $res = $this->m_detailkegiatan->get_byid($params);
-        if(count($res)){
+        if(!empty($res)){
             $out = array('success'=>true,'data'=>$res);
         } else {
             $out = array('success'=>false,'data'=>$params);
