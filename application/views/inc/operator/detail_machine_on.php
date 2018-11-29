@@ -24,10 +24,8 @@
 
 			<?php
 				$show_button_end_dt = false;
-				if(count($machine_down_time)>0){
+				if(!empty($machine_down_time)){
 					$show_button_end_dt = true;
-					// if($machine_down_time->type==1){
-					// }
 				}
 			?>
 
