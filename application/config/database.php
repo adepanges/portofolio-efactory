@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'sapidelman',
-	'database' => 'project_nutrifood_app',
+	'hostname' => 'laranus2.mysql.database.azure.com',
+	'username' => 'laranus@laranus2',
+	'password' => 'qazQAZ123',
+	'database' => 'efactory',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

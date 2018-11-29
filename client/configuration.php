@@ -5,8 +5,10 @@ $config['app_name'] = 'eFactory';
 $config['app_client'] = 'Nutrifood Indonesia';
 
 
-$config['base_url'] = "http://".$_SERVER['HTTP_HOST'];
-$config['base_url'] .= preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME'])=="\\"?"":dirname($_SERVER['SCRIPT_NAME'])).'/';
+// $config['base_url'] = "http://".$_SERVER['HTTP_HOST'];
+// $config['base_url'] .= preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME'])=="\\"?"":dirname($_SERVER['SCRIPT_NAME'])).'/';
+
+$config['base_url'] = "http://localhost:8100/";
 
 $config['base_media'] = $config['base_url'].'media/';
 $config['base_bootstrap'] = $config['base_media'].'bootstrap/';

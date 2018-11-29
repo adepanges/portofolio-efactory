@@ -1,7 +1,7 @@
 <?php
 if(!defined('BASEPATH')) exit('No direct script access allowed');
 
-class template {
+class Template {
 	
 	function __construct(){
 		$this->_ci = &get_instance();
