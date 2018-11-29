@@ -1,0 +1,31 @@
+status mesin
+
+1 -> OF/IDLE/BERHENTI
+2 -> ON/BERJALAN
+3 -> ADA MASALAH
+4 -> MASALAH DIKONFIRMASI (masalah selesai langsung ke 2 lagi mesin berjalan kembali)
+5 -> RUSAK
+
+status di tabel `trans_detailkegiatan`
+1 -> Masalah Baru
+2 -> Masalah dikonfirmasi
+3 -> masalah resolv
+
+QE
+Q = 2016
+E = JUNI
+
+Unplanned Down Time -> pasti di dalam mesin hidup
+Planned Down Time -> bisa sebelum mesin hidup dan mesin sesudah hidup
+--------------------------------------
+
+
+- Sudah bisa menambah planned downtime sebelum mesin dinyalakan (tidak menambah estimasi waktu)
+- Sudah menghitung waktu estimasi, jika downtima (planned / unplanned) ditambahkan otomatis estimasinya
+- sudah ada menu reporting di supervisor untuk keperluan cetak laporan
+	- laporan mesin aktif
+		- view sudah jadi tinggal belum ada fitur cetak
+	- laporan mesin aktif/downtime
+		- view maupun fitur cetak belum tersedia
+
+- belum bisa pause mesin, untuk keperluan mesin dimatikan tapi bisa dilanjutkan di lain waktu oleh operator yg berbeda
